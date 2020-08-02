@@ -414,6 +414,7 @@ func Configure(verbose bool, threshold severity) {
 	logging.stderrThreshold = threshold
 	if verbose {
 		logging.verbosity.set(1)
+		logging.stderrThreshold = infoLog
 	}
 }
 

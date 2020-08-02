@@ -151,6 +151,10 @@ func (s *severity) Set(value string) error {
 	return nil
 }
 
+func SeverityByName(s string) (severity, bool) {
+	return severityByName(s)
+}
+
 func severityByName(s string) (severity, bool) {
 	s = strings.ToUpper(s)
 	for i, name := range severityName {

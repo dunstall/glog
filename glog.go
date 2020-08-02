@@ -407,7 +407,7 @@ func init() {
 }
 
 func Configure(verbose bool, threshold severity) {
-	logging.toStderr = true
+	logging.toStderr = false
 	logging.alsoToStderr = false
 
 	logging.stderrThreshold = threshold
